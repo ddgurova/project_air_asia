@@ -27,6 +27,8 @@ p {
 .container {
     margin: 0 auto;
     width: 1000px;
+    display: flex;
+    flex-direction: column;
 }
 header {
     height: 124px;
@@ -78,9 +80,7 @@ header {
     text-decoration: underline;
 }
 .tours {
-    width: 511px;
-    height: 345px;
-    left: 390px;
+    display: flex;
     margin-bottom: 239px;
 }
 .tours__title {
@@ -88,6 +88,7 @@ header {
     font-weight: bold;
     line-height: 94px;
     margin-bottom: 32px;
+    left: 390px;
 }
 .tours__description {
     font-size: 18px;
@@ -108,9 +109,7 @@ header {
     color: #FFFFFF;
 }
 .hot-tours {
-    width: 1140px;
     height: 555px;
-    left: 389px;
     margin-bottom: 127px;
 }
 .hot-tours__title {
@@ -210,10 +209,7 @@ header {
     color: #FFFFFF;
 }
 .news {
-    width: 1139px;
     height: 600px;
-    left: 389px;
-    top: 1451px;
     margin-bottom: 58px;
 }
 .news__title {
@@ -221,9 +217,7 @@ header {
     font-weight: bold;
     line-height: 42px;
     display: flex;
-    align-items: flex-end;
     margin-bottom: 51px;
-    width: 325px;
     height: 49px;
     color: #FFFFFF;
 }
@@ -269,32 +263,33 @@ header {
     font-size: 16px;
 }
 .pager {
-    display: block;
+    display: flex;
     text-align: center;
     width: 375px;
     margin-bottom: 153px;
 }
-.pager__item, .pager__item--active{
-    display: inline-block;
-    vertical-align: middle;
-    background: #FFFFFF;
-    color: red;
-}
-.pager__display {
-    margin-right: 26px;
+.pager__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
 }
 .pager__item {
     display: inline-block;
     vertical-align: middle;
 }
-.pager__link {
-    display: block;
+.pager__item--active{
+    background: #FFFFFF;
+    color: red;
+    border-radius: 50%;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pager__display {
+    margin-right: 26px;
 }
 .about-us:before {
     display: inline-block;
