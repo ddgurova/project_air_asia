@@ -41,11 +41,10 @@ header {
     width: 85px;
     height: 36px;
     top: 20px;
-    left: 0px;
 }
 .menu {
     top: 34px;
-    left: 160px;
+    left: 164px;
     position: absolute;
 }
 .menu__item {
@@ -233,6 +232,7 @@ header {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
+    display: inline-block;
 }
 .news__image {
     display: block;
@@ -326,4 +326,63 @@ header {
 }
 .about-us__desc-text p: :last-child {
     margin-bottom: 0px;
+}
+.footer {
+    height: 146px;
+    position: relative;
+}
+.contacts__descr {
+color: #9A9A9A;
+font-size: 11px;
+margin-bottom: 7px;
+}
+.social {
+    position: absolute;
+    top: 61px;
+    right: 265px;
+}
+.social__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.social__item:last-child {
+     margin-right: 0px;
+}
+.social__link {
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+}
+.social__item--icon--telegram .social__link {
+    background-image: url(/Project/telegram.png);
+}
+.social__item--icon--telegram .social__link: :hover {
+    background-image: url(/Project/telegram-hover.png);
+}
+.social__item--icon--vk .social__link {
+    background-image: url(/Project/vk.png);
+}
+.social__item--icon--vk .social__link: :hover {
+    background-image: url(/Project/vk-hover.png);
+}
+.social__item--icon--vk .social__link {
+    background-image: url(/Project/f.png);
+}
+.social__item--icon--vk .social__link: :hover {
+    background-image: url(/Project/f-hover.png);
+}
+.social__item--icon--vk .social__link {
+    background-image: url(/Project/in.png);
+}
+.social__item--icon--vk .social__link: :hover {
+    background-image: url(/Project/in-hover.png);
+}
+.footer-container__content {
+    border-top: 1px solid #FFFFFF;;
+}
+.main-page-wrapper {
+    background: url(/Project/фон.png) center top no-repeat;
 }
