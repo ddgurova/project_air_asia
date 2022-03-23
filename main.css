@@ -377,5 +377,7 @@ margin-bottom: 7px;
     border-top: 1px solid #FFFFFF;;
 }
 .main-page-wrapper {
-    background: url(./pictures/elephant.png) center top no-repeat;
+    background-image: url(./pictures/elephant.png), url(./pictures/man.png);
+    background-position:  center top, right bottom;
+    background-repeat: no-repeat;
 }
