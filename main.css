@@ -148,6 +148,7 @@ header {
 .hot-tours__icons {
     height: 38px;
     margin-bottom: 24px;
+    display: flex;
     align-items: center;
 }
 .icons__calendar {
@@ -257,21 +258,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 190px;
+    gap: 5px;
 }
 .pager__item {
     display: inline-block;
     vertical-align: middle;
-}
-.pager__item--active{
-    background: #FFFFFF;
-    color: red;
-    border-radius: 50%;
     width: 32px;
     height: 32px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+.pager__item--active, .pager__item:hover{
+    background: #FFFFFF;
+    color: red;
+}
+.pager__item:hover .pager__link {
+    color: red;
 }
 .pager__display {
     margin-right: 26px;
@@ -329,9 +333,9 @@ color: #9A9A9A;
 font-size: 11px;
 margin-bottom: 7px;
 }
-.social {
+.socials {
     position: absolute;
-    top: 61px;
+    top: 34px;
     right: 265px;
 }
 .social__item {
@@ -349,28 +353,28 @@ margin-bottom: 7px;
     height: 36px;
     background: center center no-repeat;
 }
-.social__item--icon--telegram .social__link {
+.social__item--icon--telegram.social__link {
     background-image: url(./pictures/telegram.png);
 }
-.social__item--icon--telegram .social__link:hover {
+.social__item--icon--telegram.social__link:hover {
     background-image: url(./pictures/telegram-hover.png);
 }
-.social__item--icon--vk .social__link {
+.social__item--icon--vk.social__link {
     background-image: url(./pictures/vk.png);
 }
-.social__item--icon--vk .social__link:hover {
+.social__item--icon--vk.social__link:hover {
     background-image: url(./pictures/vk-hover.png);
 }
-.social__item--icon--vk .social__link {
+.social__item--icon--vk.social__link {
     background-image: url(./pictures/f.png);
 }
-.social__item--icon--vk .social__link:hover {
+.social__item--icon--vk.social__link:hover {
     background-image: url(./pictures/f-hover.png);
 }
-.social__item--icon--vk .social__link {
+.social__item--icon--vk.social__link {
     background-image: url(./pictures/in.png);
 }
-.social__item--icon--vk .social__link:hover {
+.social__item--icon--vk.social__link:hover {
     background-image: url(./pictures/in-hover.png);
 }
 .footer-container__content {
